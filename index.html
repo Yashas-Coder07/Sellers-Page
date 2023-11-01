@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sellers Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand" style="background-color: rgb(87, 208, 208);">
+
+        <h1 class="heading">
+            Sellers Page
+        </h1>
+
+    </nav>
+    <br>
+    <div class="container">
+
+        <form novalidate>
+
+            <label for="catogery" class="form-label">Item</label>
+            <input type="text" required id="catogery" class="form-control" placeholder="Item Name">
+
+            <label for="amount" class="form-label">Amount</label>
+            <div class="input-group">
+
+                <div class="input-group-text">$</div>
+                <input type="number" required id="amount" class="form-control" placeholder="Enter Amount">
+
+            </div>
+
+            <label for="catogery" class="form-label">Choose Catogery</label>
+
+            <select class="form-select" required id="drop-down">
+                <option>Food Product</option>
+                <option>Skin Care</option>
+                <option>Electronics</option>
+            </select>
+            <br>
+            <button class="btn btn-outline-secondary" type="submit">Add Product</button>
+        </form>
+        <br>
+        <div>
+            <h2>Products</h2>
+            <ul class="items">
+                <li id="food">
+                    <h2>Food Items</h2>
+                </li>
+                <li id="elect">
+                    <h2>Electronics</h2>
+                </li>
+                <li id="care">
+                    <h2>Skin Care</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="dom.js"></script>
+</body>
+
+</html>

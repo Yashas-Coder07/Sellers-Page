@@ -1,0 +1,10 @@
+.container {
+    border: 5px solid bisque;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.heading {
+    margin-left: 45%;
+}
